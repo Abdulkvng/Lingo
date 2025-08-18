@@ -42,60 +42,6 @@ graph TD
     G --> H[📊 Progress Tracking]
 ```
 
-### **1️⃣ Intelligent Prompt System**
-```typescript
-// Dynamic challenge word generation based on proficiency
-const getChallengeWords = async (prompt, targetLanguage, proficiency) => {
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: `Generate vocabulary challenges for ${proficiency} level`,
-    config: { responseSchema: challengeWordsSchema }
-  });
-};
-```
-
-### **2️⃣ Advanced Audio Capture**
-```typescript
-// WebRTC MediaRecorder with real-time volume visualization
-const startRecording = async () => {
-  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-  const recorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
-  
-  // Web Audio API for live volume feedback
-  const context = new AudioContext();
-  const analyser = context.createAnalyser();
-  analyser.fftSize = 256;
-  
-  // Real-time RMS calculation
-  const updateVolume = () => {
-    analyser.getByteTimeDomainData(dataArray);
-    const rms = calculateRMS(dataArray);
-    setVolume(rms * 2.5); // Visual feedback scaling
-  };
-};
-```
-
-### **3️⃣ AI-Powered Speech Analysis**
-```typescript
-// Multi-modal AI processing with structured output
-const evaluateSpeech = async (audioBlob, language, proficiency, prompt, words) => {
-  const audioData = await blobToBase64(audioBlob);
-  
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: {
-      parts: [
-        { inlineData: { mimeType: 'audio/webm', data: audioData } },
-        { text: `Analyze ${proficiency} ${language} response to: "${prompt}"` }
-      ]
-    },
-    config: {
-      responseMimeType: "application/json",
-      responseSchema: feedbackSchema // Ensures consistent structure
-    }
-  });
-};
-```
 
 ### **4️⃣ Multi-Dimensional Scoring**
 The AI evaluates speech across **5 core dimensions**:
@@ -258,30 +204,6 @@ interface AIFeedback {
   challengeWordsUsed: ChallengeWordFeedback[]; // Contextual usage validation
 }
 ```
-
-## 🎯 Key Algorithms
-
-### **Volume Visualization Algorithm**
-```typescript
-// RMS (Root Mean Square) calculation for audio visualization
-const updateVolume = () => {
-  analyser.getByteTimeDomainData(dataArray);
-  let sumSquares = 0.0;
-  for (let i = 0; i < dataArray.length; i++) {
-    const v = (dataArray[i] / 128.0) - 1.0; // Normalize to [-1, 1]
-    sumSquares += v * v;
-  }
-  const rms = Math.sqrt(sumSquares / dataArray.length);
-  setVolume(Math.min(1, rms * 2.5)); // Amplify & clamp
-};
-```
-
-### **XP Calculation System**
-```typescript
-// Gamification scoring algorithm
-const baseScore = Math.round(feedback.overallScore);
-const bonusXp = feedback.challengeWordsUsed.filter(w => w.used).length * 5;
-const totalXp = baseScore + bonusXp; // Base + Challenge bonus
 ```
 
 ## 📊 Performance Metrics
