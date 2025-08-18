@@ -204,7 +204,7 @@ interface AIFeedback {
   challengeWordsUsed: ChallengeWordFeedback[]; // Contextual usage validation
 }
 ```
-```
+
 
 ## 📊 Performance Metrics
 
