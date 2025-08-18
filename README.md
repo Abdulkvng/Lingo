@@ -321,7 +321,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Built with ❤️ by [Your Name]**
+**Developed by Abdulrahman Sadiq**
 
 [🌐 Live Demo](https://ai.studio/apps/drive/1ma5PggFU8WEPWlqBV6BtnfeVupXJPfOD) • [📖 Documentation](docs/) • [🐛 Issues](issues/) • [💬 Discussions](discussions/)
 
