@@ -9,7 +9,6 @@
 
 A cutting-edge, minimalist AI-powered language coaching platform that provides real-time speech analysis and personalized feedback using Google's Gemini 2.5 Flash model.
 
-![Lingo Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
 
 ## 🌟 Features
 
