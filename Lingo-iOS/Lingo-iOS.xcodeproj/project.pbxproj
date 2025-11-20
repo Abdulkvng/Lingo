@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		LingoApp.swift in Sources = {isa = PBXBuildFile; };
+		ContentView.swift in Sources = {isa = PBXBuildFile; };
+		DataModels.swift in Sources = {isa = PBXBuildFile; };
+		PersistenceService.swift in Sources = {isa = PBXBuildFile; };
+		GeminiService.swift in Sources = {isa = PBXBuildFile; };
+		AudioRecorder.swift in Sources = {isa = PBXBuildFile; };
+		OnboardingScreen.swift in Sources = {isa = PBXBuildFile; };
+		PromptScreen.swift in Sources = {isa = PBXBuildFile; };
+		RecordingScreen.swift in Sources = {isa = PBXBuildFile; };
+		FeedbackScreen.swift in Sources = {isa = PBXBuildFile; };
+		CompletionScreen.swift in Sources = {isa = PBXBuildFile; };
+		ProfileScreen.swift in Sources = {isa = PBXBuildFile; };
+		DashboardScreen.swift in Sources = {isa = PBXBuildFile; };
+		LoadingScreen.swift in Sources = {isa = PBXBuildFile; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		Lingo.app = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		LingoApp.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoApp.swift; sourceTree = "<group>"; };
+		DataModels.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		PersistenceService.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		GeminiService.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		AudioRecorder.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		OnboardingScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		PromptScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptScreen.swift; sourceTree = "<group>"; };
+		RecordingScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingScreen.swift; sourceTree = "<group>"; };
+		FeedbackScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackScreen.swift; sourceTree = "<group>"; };
+		CompletionScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionScreen.swift; sourceTree = "<group>"; };
+		ProfileScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		DashboardScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		LoadingScreen.swift = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		Info.plist = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		Root = {
+			isa = PBXGroup;
+			children = (
+				Lingo-iOS,
+				Products,
+			);
+			sourceTree = "<group>";
+		};
+		Products = {
+			isa = PBXGroup;
+			children = (
+				Lingo.app,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		Lingo-iOS = {
+			isa = PBXGroup;
+			children = (
+				LingoApp.swift,
+				Models,
+				Services,
+				Views,
+				Info.plist,
+			);
+			path = "Lingo-iOS";
+			sourceTree = "<group>";
+		};
+		Models = {
+			isa = PBXGroup;
+			children = (
+				DataModels.swift,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		Services = {
+			isa = PBXGroup;
+			children = (
+				PersistenceService.swift,
+				GeminiService.swift,
+				AudioRecorder.swift,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		Views = {
+			isa = PBXGroup;
+			children = (
+				OnboardingScreen.swift,
+				PromptScreen.swift,
+				RecordingScreen.swift,
+				FeedbackScreen.swift,
+				CompletionScreen.swift,
+				ProfileScreen.swift,
+				DashboardScreen.swift,
+				LoadingScreen.swift,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		Lingo = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = LingoConfigurationList;
+			buildPhases = (
+				SourcesBuildPhase,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lingo;
+			productName = Lingo;
+			productReference = Lingo.app;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		Project = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = ProjectConfigurationList;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = Root;
+			productRefGroup = Products;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				Lingo,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SourcesBuildPhase = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				LingoApp.swift in Sources,
+				DataModels.swift in Sources,
+				PersistenceService.swift in Sources,
+				GeminiService.swift in Sources,
+				AudioRecorder.swift in Sources,
+				OnboardingScreen.swift in Sources,
+				PromptScreen.swift in Sources,
+				RecordingScreen.swift in Sources,
+				FeedbackScreen.swift in Sources,
+				CompletionScreen.swift in Sources,
+				ProfileScreen.swift in Sources,
+				DashboardScreen.swift in Sources,
+				LoadingScreen.swift in Sources,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DebugConfiguration = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Lingo-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ReleaseConfiguration = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Lingo-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ProjectConfigurationList = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DebugConfiguration,
+				ReleaseConfiguration,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		LingoConfigurationList = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DebugConfiguration,
+				ReleaseConfiguration,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = Project;
+}
